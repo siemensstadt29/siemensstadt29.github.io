@@ -5,9 +5,6 @@
 
 /* global document, Office */
 
-module.exports = {
-  run
-};
 
 Office.onReady((info) => {
   if (info.host === Office.HostType.Outlook) {
