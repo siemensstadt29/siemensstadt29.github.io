@@ -5,6 +5,10 @@
 
 /* global document, Office */
 
+module.exports = {
+  run
+};
+
 Office.onReady((info) => {
   if (info.host === Office.HostType.Outlook) {
     console.log("Das Skript wurde erfolgreich geladen!");
@@ -13,7 +17,7 @@ Office.onReady((info) => {
   }
 });
 
-export async function run() {
+async function run() {
   // Get a reference to the current message
   const item = Office.context.mailbox.item;
   // Write message property value to the task pane
