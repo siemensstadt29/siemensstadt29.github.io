@@ -29,7 +29,6 @@ async function run() {
   //const toRecipient = item.to[0]["emailAddress"];
   const mailGUID = encodeURIComponent(item.itemId);
   const subject = item.subject;
-  item.
 
   console.log("Halli hallooo");
 
