@@ -29,7 +29,7 @@ async function run() {
   //const toRecipient = item.to[0]["emailAddress"];
   const mailGUID = encodeURIComponent(item.itemId);
   const subject = encodeURIComponent(item.subject);
-  const date = encodeURIComponent(item.dateTimeCreated);
+  const date = encodeURIComponent(item.dateTimeCreated.toISOString());
 
   console.log("Halli hallooo");
   console.log("Datum = " + date);
