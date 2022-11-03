@@ -14,11 +14,6 @@ Office.onReady((info) => {
   }
 });
 
-Office.onVisibilityModeChanged(function(args) {
-  if (args.visibilityMode == "Hidden") {
-      console.log("Taskpane wurde geschlossen!");
-  }
-});
 
 async function run() {
   // Get a reference to the current message
@@ -39,6 +34,7 @@ async function run() {
 
   console.log("Halli hallooo");
   console.log("Datum = " + date);
+  console.log("Visibility = " + Office.VisibilityMode);
 
   document.getElementById("powerapps-iframe").setAttribute("src", "https://apps.powerapps.com/play/9c9d578c-eb09-4c0c-81a4-9df8ecca7650?tenantId=b9d0cec0-1f3e-4a91-8ec5-7341d8dbe1e0&source=iframe&mailGuid=" + mailGUID + "&subject=" + subject + "&mailDate=" + date);
 }
