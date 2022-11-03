@@ -14,6 +14,12 @@ Office.onReady((info) => {
   }
 });
 
+Office.addin.onVisibilityModeChanged(function(args) {
+  if (args.visibilityMode == "Hidden") {
+      console.log("Taskpane wurde geschlossen!");
+  }
+});
+
 async function run() {
   // Get a reference to the current message
   const item = Office.context.mailbox.item;
