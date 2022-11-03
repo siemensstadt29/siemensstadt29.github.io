@@ -14,7 +14,7 @@ Office.onReady((info) => {
   }
 });
 
-Office.addin.onVisibilityModeChanged(function(args) {
+Office.onVisibilityModeChanged(function(args) {
   if (args.visibilityMode == "Hidden") {
       console.log("Taskpane wurde geschlossen!");
   }
