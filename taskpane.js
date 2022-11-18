@@ -20,6 +20,9 @@ Office.onReady((info) => {
       console.log("Event handler added.");
     });
 
+    const httpString2 = document.getElementById("joinedArrayDiv");
+    httpString2.textContent = "So ein wunderschöner Tag";
+
     run();
     
   }
