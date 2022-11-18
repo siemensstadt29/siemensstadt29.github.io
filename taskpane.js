@@ -48,7 +48,7 @@ async function run() {
   console.log("Datum = " + date);
 
   const httpString = document.getElementById("joinedArrayDiv");
-  httpString.innerText = "Hello again - Howard Carpendale";
+  httpString.textContent = "Hello again - Howard Carpendale";
 
   Office.context.mailbox.getSelectedItemsAsync(asyncResult => {
     if (asyncResult.status === Office.AsyncResultStatus.Failed) {
