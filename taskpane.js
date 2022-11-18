@@ -28,7 +28,7 @@ Office.onReady((info) => {
 
 async function run() {
   // Get a reference to the current message
-  // *const item = Office.context.mailbox.item;
+  const item = Office.context.mailbox.item;
   // Write message property value to the task pane
   // document.getElementById("item-subject").innerHTML = "<b>Betreff:</b> <br/>" + item.subject;
   // document.getElementById("item-attachments").innerHTML = "<b>Anzahl Anlagen:</b> <br/>" + item.attachments.length;
