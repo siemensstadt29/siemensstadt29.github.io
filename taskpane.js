@@ -66,6 +66,9 @@ async function run() {
             joinedArray += "&" + key + "=" + mailGuidArray[key];
           }
         }
+
+        const httpString = document.getElementById("joinedArrayDiv");
+        httpString.innerText = joinedArray;
     });
 });
 
