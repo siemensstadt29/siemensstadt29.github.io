@@ -66,7 +66,9 @@ async function run() {
 
     console.log("Joined Array = " + joinedArray);
 
-    document.getElementById("powerapps-iframe").setAttribute("src", "https://apps.powerapps.com/play/794785f0-ec0c-4fe6-a5b8-be8c7d518656?tenantId=b9d0cec0-1f3e-4a91-8ec5-7341d8dbe1e0&source=iframe&" + joinedArray + "&numberMails=" + joinedArray.length);
+    console.log("asyncResult length = " + asyncResult.value.length);
+
+    document.getElementById("powerapps-iframe").setAttribute("src", "https://apps.powerapps.com/play/794785f0-ec0c-4fe6-a5b8-be8c7d518656?tenantId=b9d0cec0-1f3e-4a91-8ec5-7341d8dbe1e0&source=iframe&" + joinedArray + "&numberMails=" + asyncResult.value.length);
 
     return;
   });
